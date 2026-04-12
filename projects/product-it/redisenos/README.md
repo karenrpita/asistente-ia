@@ -1,8 +1,14 @@
-# Rediseno: Navegacion, Portada y Noticias
+# Redisenos
 
-Rediseno de las secciones principales del producto: menú de navegación, portada y páginas de noticias.
+Rediseno de las secciones principales del producto MARCA.
 
 **Estado:** Activo — prioritario. En fase de análisis e investigación.
+
+**Areas en scope:**
+- Portada
+- Menu y navegacion
+- Noticias
+- Directos
 
 **Fechas clave:**
 - Sin deadline fijo por el momento
@@ -10,4 +16,4 @@ Rediseno de las secciones principales del producto: menú de navegación, portad
 
 ## Notas
 
-Proyecto de alta prioridad. Karen necesita apoyo con análisis de benchmarks e investigación de producto. Impacto esperado en usuarios y páginas vistas.
+Proyecto de alta prioridad. Requiere apoyo con análisis de benchmarks e investigación de producto. Impacto esperado en usuarios y páginas vistas.
