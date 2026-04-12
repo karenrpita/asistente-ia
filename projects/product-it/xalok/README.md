@@ -1,8 +1,15 @@
-# Migracion a nuevo CMS
+# Xalok
 
-Migración del contenido y flujos editoriales al nuevo sistema de gestión de contenidos.
+Migración de las publicaciones del grupo a Xalok, el nuevo CMS.
 
 **Estado:** Activo — en curso
+
+**Publicaciones en scope:**
+- MARCA ES
+- MARCA EN
+- MARCA US
+- MARCA MX
+- CUIDATEPLUS
 
 **Fechas clave:**
 - (Añadir deadlines conforme se definan)
