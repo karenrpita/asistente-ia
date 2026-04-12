@@ -52,7 +52,7 @@ Active projects live in `projects/`. Each has a `README.md` with description, st
 
 Projects are organized by category:
 
-- `projects/product-it/` — hub-videos, xalok, rediseno-navegacion-portada-noticias
+- `projects/product-it/` — hub-videos, xalok, redisenos
 - `projects/editorial/` — mundial-2026
 - `projects/publicidad/` — publicidad-optimizacion-formatos
 - `projects/negocio/` — (vacío)
