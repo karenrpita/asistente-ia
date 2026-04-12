@@ -50,12 +50,13 @@ Claude Code maintains persistent memory between conversations. If Karen says "re
 
 Active projects live in `projects/`. Each has a `README.md` with description, status, and key dates.
 
-Current projects:
-- `projects/rediseno-navegacion-portada-noticias/`
-- `projects/mundial-2026/`
-- `projects/migracion-nuevo-cms/`
-- `projects/hub-videos/`
-- `projects/publicidad-optimizacion-formatos/`
+Projects are organized by category:
+
+- `projects/product-it/` — hub-videos, migracion-nuevo-cms, rediseno-navegacion-portada-noticias
+- `projects/editorial/` — mundial-2026
+- `projects/publicidad/` — publicidad-optimizacion-formatos
+- `projects/negocio/` — (vacío)
+- `projects/trafico/` — (vacío)
 
 ## Templates
 
