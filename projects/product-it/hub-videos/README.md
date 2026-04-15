@@ -82,6 +82,8 @@ Bloqueante técnico: se necesita activar floating/PiP en AMP (ticket NP-754).
 - Fuentes nuevas con derechos
 - Acuerdos con creadores de contenido
 
+Ver proyecto específico de automatización: [integracion-video-externo](../integracion-video-externo/README.md)
+
 ## Landings del Hub
 
 - Competiciones: `marca.com/videos/competiciones.html`
