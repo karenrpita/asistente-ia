@@ -8,23 +8,43 @@
 
 ## Descripcion del problema
 
-En las posiciones publicitarias dentro de noticias, se reserva un espacio de 300x600 px anticipando la llegada de un formato display o roba de ese tamaño. Sin embargo, lo que se recibe con frecuencia son creatividades de 300x250.
+En las posiciones publicitarias dentro de noticias aparecen espacios en blanco visibles que generan en el usuario la percepción de error o fallo en la página. Esto ocurre tanto cuando no carga ningún anuncio como cuando el creativo servido no coincide en tamaño con el slot reservado.
 
-El resultado es un espacio en blanco visible arriba y abajo del anuncio (el creativo queda centrado verticalmente en el slot de 300x600), lo que genera en el usuario la percepción de error o fallo en la página.
-
-Adicionalmente, cuando no carga ningún formato publicitario, el hueco reservado de 300x600 queda completamente en blanco en mitad de la lectura.
+El problema afecta principalmente a posiciones cedidas a terceros (intext y similares). En los espacios que controlamos directamente, ad tech confirma que no hay problemas de tamaño en web y AMP — si los hubiera, depende de nosotros arreglarlo.
 
 ---
 
 ## Contexto tecnico
 
-- El centrado vertical del creativo dentro del slot ya está implementado a nivel técnico.
-- El problema visual es consecuencia directa de la diferencia de tamaño entre el slot reservado (300x600) y el anuncio servido (300x250).
-- Esto ocurre en los tres entornos: web, AMP y apps.
+- El centrado vertical del creativo dentro del slot ya está implementado.
+- El problema visual es consecuencia de la diferencia entre el tamaño del slot reservado y el del creativo servido.
+- Afecta a web, AMP y apps, aunque con causas y soluciones distintas según el entorno.
 
 ### Lo que ya esta implementado en AMP
 
-El espacio está bloqueado (tamaño fijo) para evitar CLS y que los elementos de la página no se muevan. Esto resuelve el problema de Core Web Vitals en AMP, pero mantiene el problema visual de los espacios en blanco cuando el creativo no ocupa el slot completo.
+El espacio está bloqueado (tamaño fijo) para evitar CLS y que los elementos de la página no se muevan. Resuelve el problema de Core Web Vitals, pero mantiene el problema visual de los espacios en blanco cuando el creativo no ocupa el slot completo.
+
+---
+
+## Causas identificadas (input ad tech, 2026-04-15)
+
+El problema en web se da principalmente en posiciones cedidas a terceros (intext). Al ceder el espacio con un tamaño acordado, ese tercero hace sus propias llamadas internas para rellenarlo, y puede servir creatividades de dimensiones distintas. Hay tres escenarios concretos:
+
+### Causa 1: cascada de terceros sin sincronizacion de tamaños
+
+Nuestro adserver devuelve un slot de dimensiones AxB (fijo). El tercero que lo gestiona hace sus propias llamadas para rellenarlo y puede servir una creatividad de dimensiones CxD. A su vez, ese tercero puede apoyarse en otro, y así sucesivamente. Los tamaños no siempre se reajustan hacia arriba en toda la cadena. Solucionarlo requeriría una sincronización no solo con nuestro tercero directo, sino con todos los niveles inferiores de la cascada.
+
+### Causa 2: recargas con cambio de formato
+
+Cuando termina un vídeo, se produce una recarga que puede servir una posición de display con dimensiones distintas a las del vídeo. Las dimensiones de display no coinciden con las de vídeo, lo que genera espacios en blanco, a veces vertical, a veces horizontal.
+
+### Causa 3: creatividades modificadas automaticamente
+
+En algunos casos, una creatividad de dimensiones AxB es transformada de forma automática a dimensiones CxD. El espacio sobrante queda "relleno" técnicamente, pero el usuario lo ve como blanco.
+
+### Por que el anuncio no puede redimensionar su propio slot
+
+Técnicamente es posible, pero requiere soporte en toda la cascada de tecnologías del tercero. El obstáculo principal es el **safe frame**: los anuncios deben servirse dentro de un entorno aislado por seguridad. Desde dentro de ese entorno no es sencillo modificar la página que lo contiene, precisamente para evitar que un anuncio malicioso pueda alterar cualquier elemento de la página, no solo su propio slot. En apps, la complejidad aumenta considerablemente.
 
 ---
 
@@ -47,7 +67,7 @@ Escalar el espacio de reserva en función del anuncio que entra genera dos probl
 
 ## Opciones en evaluacion
 
-> Esta sección se irá completando conforme avance el debate.
+> Las opciones 1-4 aplican a los espacios que controlamos directamente. Para posiciones cedidas a terceros, la solución pasa por negociación contractual o técnica con el tercero (ver opción 5).
 
 ### Opcion 1: Placeholder visual con fondo neutro
 Mostrar un fondo neutro (gris claro, color corporativo, etc.) en el espacio sobrante para que no parezca un error. No elimina el espacio en blanco, pero cambia la percepción del usuario.
@@ -73,11 +93,11 @@ Si no entra ningún formato, colapsar el slot a 0 px en lugar de dejar el hueco 
 - Pros: elimina el espacio en blanco cuando no hay publicidad
 - Contras: el colapso en sí genera CLS; hay que implementarlo con cuidado (por ejemplo, solo colapsar tras timeout definido)
 
-### Opcion 5: Reservar solo el tamaño del formato solicitado (bidding)
-Coordinar con el equipo de ad ops para que el tamaño del slot reservado corresponda exactamente al formato que se está pujando.
+### Opcion 5: Negociar con el tercero el tamaño exacto del creativo servido
+Para posiciones cedidas, la solución de raíz pasa por exigir contractual o técnicamente que el tercero respete el tamaño acordado del slot en toda su cascada interna.
 
-- Pros: elimina la discrepancia de origen
-- Contras: requiere coordinación con ad ops y posible cambio en la configuración del header bidding
+- Pros: elimina la discrepancia de origen; no requiere cambios en nuestra infraestructura
+- Contras: depende de la voluntad y capacidad técnica del tercero; puede ser complejo de implementar en cascadas con múltiples niveles
 
 ---
 
@@ -128,7 +148,9 @@ No hay casos documentados públicamente de medios españoles (AS, El Mundo, etc.
 
 ## Proximos pasos
 
+- Identificar qué posiciones concretas están cedidas a terceros y cuáles controlamos directamente
+- Para posiciones propias: decidir solución técnica con IT (opciones 1-4)
+- Para posiciones cedidas: abrir conversación con los terceros para exigir respeto del tamaño acordado
 - Revisar manualmente cómo resuelven este problema AS, El Mundo u otros medios de referencia
-- Confirmar con IT si están usando Prebid.js u otro wrapper de header bidding (determina viabilidad de la opción 5)
 - Validar con IT el impacto real en CLS de las opciones que implican cambio de tamaño
 - Decidir si se aborda primero web, AMP o apps (AMP ya tiene CLS resuelto; web es la prioridad)
