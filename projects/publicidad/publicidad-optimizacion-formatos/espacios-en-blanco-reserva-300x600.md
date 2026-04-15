@@ -28,6 +28,14 @@ El espacio está bloqueado (tamaño fijo) para evitar CLS y que los elementos de
 
 ---
 
+## Impacto en viewability y densidad publicitaria
+
+Reservar un slot de 300x600 empuja hacia abajo el contenido y los slots publicitarios siguientes. Esto reduce de forma inevitable la viewability del siguiente slot, ya que el usuario tiene que hacer más scroll para llegar a él. Para compensar esa pérdida de viewability, la tendencia es meter más unidades publicitarias en la página, lo que empeora la experiencia de usuario y puede entrar en conflicto con las políticas de densidad publicitaria de Google.
+
+Es un efecto en cadena: slot más grande → menor viewability del siguiente → más publicidad para compensar → peor experiencia → menor engagement → menos páginas vistas.
+
+---
+
 ## Por que no se puede escalar el slot dinamicamente
 
 Escalar el espacio de reserva en función del anuncio que entra genera dos problemas graves:
@@ -107,6 +115,8 @@ Fuente: https://developers.google.com/publisher-tag/guides/minimize-layout-shift
 ### Medios españoles
 
 No hay casos documentados públicamente de medios españoles (AS, El Mundo, etc.). Habría que revisar manualmente cómo lo están resolviendo.
+
+> Cualquier dato adicional sobre impacto en UX o ingresos publicitarios será bienvenido. Si alguien del equipo o de ad ops tiene benchmarks, añadirlos aquí.
 
 ---
 
