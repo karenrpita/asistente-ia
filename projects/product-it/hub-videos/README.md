@@ -96,6 +96,15 @@ Ver proyecto específico de automatización: [integracion-video-externo](../inte
 - **SRT automático + resumen con IA:** automatizar la creación de subtítulos (archivos SRT) y generar el resumen del CT Vídeo desde la transcripción vía IA. Requiere integración con Dailymotion. Ver GNP.
 - **Crónicas automáticas con IA:** generar crónicas de partido desde feeds Opta para competiciones con menor cobertura editorial. Ver GNP.
 
+## Status 2026-04-16
+
+- **APP:** versión del Vídeo Hub casi terminada. El equipo de APPs la está validando.
+- **Ediciones (EN, MX, USA):** trabajando junto al proyecto de Xalok la estructura de canales y de portada del hub. English saldrá a la vez que la migración a Xalok.
+- **Vídeo vertical (MX):** parado por Caliente en México.
+- **Carrusel de portada:** se sigue actualizando según los Brand Days.
+
+---
+
 ## Personas involucradas
 
 - Damien Santiago (responsable de audiencias y estrategia)

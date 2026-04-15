@@ -1,7 +1,21 @@
 # MARCA Premium
 
-**Estado:** En definicion
-**Ultima actualizacion:** 2026-04-14
+**Estado:** En definición — lanzamiento previsto tras el parón de septiembre 2026
+**Ultima actualizacion:** 2026-04-16
+
+## Status 2026-04-16
+
+- Mei mostró la nueva landing con los planes.
+- **MARCA PRO no estará entre las ofertas** del nuevo Premium.
+- Las secciones de Tiramillas, Gaming y las estáticas **no se cerrarán**. Tampoco noticias en AMP.
+- Se va a evaluar con Publicidad la posibilidad de **reducir posiciones publicitarias** que se muestran a los suscriptores.
+- Habrá un **trial gratuito** o con un precio más bajo.
+- **Lanzamiento:** después del parón de septiembre 2026.
+- Se plantea **Google One Tap** para captar registros. En El Mundo está funcionando muy bien.
+- **CLUB MARCA / Jakala:** en evaluación empresas que puedan sustituir a Jakala.
+- **Qualifio:** estimado el GNP para enviar información de autenticación del usuario a Qualifio. Talla estimada: S.
+
+---
 
 ## Descripcion
 

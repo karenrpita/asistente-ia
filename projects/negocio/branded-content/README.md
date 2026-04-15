@@ -38,9 +38,16 @@ Crear un **catálogo de productos de branded content** basado en el calendario d
 
 Sección de recomendaciones de productos, principalmente de Amazon.
 
-**Proyecto activo:**
+### Rendimiento
 
-### Herramienta de resúmenes de producto con IA
+| Período | Visitas |
+|---|---|
+| Marzo 2025 | ~26.000 |
+| Marzo 2026 | ~65.000 |
+
++150% interanual en marzo 2026.
+
+### Proyecto activo: Herramienta de resúmenes de producto con IA
 
 Genera resúmenes automáticos de fichas de producto a partir de la URL de Amazon. Permite escalar la producción de contenido de afiliación sin redacción manual.
 

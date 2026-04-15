@@ -1,17 +1,31 @@
 # Patrocinios
 
-**Estado:** Por definir
+**Estado:** Activo
+**Última actualización:** 2026-04-16
 
-## Descripcion
+## Descripción
 
-Proyecto de gestion de patrocinios publicitarios. Completar con descripcion, objetivo y contexto.
+Gestión de patrocinios publicitarios directos en MARCA.
 
-## Personas involucradas
+---
 
-- Por definir
+## Patrocinios activos / en revisión
 
-## Quejas de clientes
+### Oppo
+- **Estado:** En revisión — incidencia activa.
+- **Incidencia (2026-04-14):** patrocinio de imágenes en Portada. La calidad de las imágenes en Xalok es muy baja, incompatible con el posicionamiento del cliente (cámara de alta calidad). Ocurrió durante los cuartos de final de Champions League 2026 (Atlético - Barça).
 
-| Fecha | Cliente | Formato | Descripcion | Contexto |
+---
+
+## Patrocinios descartados
+
+### Repsol
+- **Estado:** Descartado.
+
+---
+
+## Histórico de quejas de clientes
+
+| Fecha | Cliente | Formato | Descripción | Contexto |
 |---|---|---|---|---|
-| 2026-04-14 | OPPO | Patrocinio imágenes Portada | Calidad de imágenes muy baja en Xalok | Cuartos de final Champions League 2026 (Atlético - Barça). El patrocinio se basa en la calidad de cámara de Oppo, lo que hace incompatible la baja resolución de las fotos en el CMS con el posicionamiento del cliente. |
+| 2026-04-14 | OPPO | Patrocinio imágenes Portada | Calidad de imágenes muy baja en Xalok | Cuartos de final Champions League 2026 (Atlético - Barça). El patrocinio se basa en la calidad de cámara de Oppo, incompatible con baja resolución en el CMS. |

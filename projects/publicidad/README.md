@@ -22,6 +22,14 @@ El mayor problema del área de publicidad no es técnico ni comercial — es est
 
 ---
 
+## Status 2026-04-16
+
+- **STN Player:** incluido en MARCA España IP USA.
+- **Caliente MX:** activo en edición México IP México. En desarrollo: edición España IP México.
+- **Newsletter Real Madrid (abril):** se está vendiendo — formatos Mega, Logo y Banner.
+
+---
+
 ## Partners activos
 
 | Partner | Tipo | Acuerdo | Reporting | Archivo |
@@ -32,6 +40,35 @@ El mayor problema del área de publicidad no es técnico ni comercial — es est
 | Interstitial | Formato de pantalla completa | Publicidad | No | [interstitial.md](interstitial.md) |
 | Amazon | Red publicitaria | — | — | Sin espacios propios |
 | Google | Red publicitaria | — | — | Sin espacios propios |
+
+---
+
+## Formatos activos
+
+| Formato | Tipo | Control | Estado | Problema principal | Archivo |
+|---|---|---|---|---|---|
+| Posiciones display propias | Display (300x250 / 300x600) | Directo (ad tech) | Activo — en debate | Espacios en blanco; 300x600 reduce viewability de slots siguientes | [espacios-en-blanco-reserva-300x600.md](publicidad-optimizacion-formatos/espacios-en-blanco-reserva-300x600.md) |
+| Interstitial | Pantalla completa | Publicidad (sin protocolo) | Activo — activación arbitraria | Sin métricas; riesgo SEO en móvil; ningún freno desde Producto o UX | [interstitial.md](interstitial/interstitial.md) |
+| Taboola — widget noticias relacionadas | Widget embebido en artículo | Indirecto (contrato directo Olano) | Activo | Posición antes del penúltimo párrafo; no pasa por middleware | [taboola.md](taboola/taboola.md) |
+| Taboola — 30 cards al final | Feed de contenido recomendado | Indirecto (contrato directo Olano) | Activo | Destruye recirculación; 165 px obligatorios por contrato; genera círculo vicioso | [taboola.md](taboola/taboola.md) |
+| Seedtag | Display contextual (IA) | Indirecto (contrato directo Olano) | Activo | Formatos exactos desconocidos; sin reporting | [seedtag.md](seedtag/seedtag.md) |
+| Top Scroll | Nuevo formato — parte superior del scroll | Directo (ad tech) | Bloqueado — compromete CLS | Prueba en Ajedrez: impacto en Core Web Vitals. No activar sin resolver CLS | [topscroll/README.md](topscroll/README.md) |
+| Patrocinios directos | Display directo / imágenes patrocinadas | Directo (comercial) | Activo — incidencia abierta (Oppo) | Calidad de imágenes en Xalok incompatible con patrocinadores de imagen premium | [patrocinios/README.md](patrocinios/README.md) |
+| Middleware propio | Stack publicitario (header bidding) | Directo (ad tech — Millán) | Activo | Sin visibilidad del incremento real generado | [middleware.md](middleware/middleware.md) |
+
+---
+
+## Resumen del estado actual
+
+**El problema no es de volumen, es de eficacia y control.**
+
+- Demasiados formatos con escaso o nulo reporting. Las decisiones se toman sin datos.
+- Los contratos con partners externos (Taboola, Seedtag) se firmaron sin validación de Producto, UX ni SEO. Algunas obligaciones contractuales dañan directamente las métricas de negocio.
+- Formatos como el interstitial se activan sin protocolo, sin criterio y sin medición de impacto.
+- Los espacios en blanco en posiciones display dañan la percepción de calidad y reducen la viewability de los slots siguientes, generando un efecto en cadena que lleva a meter más publicidad para compensar, lo que empeora la experiencia y reduce el engagement.
+- El formato con mayor riesgo inmediato para las métricas es Taboola: destruye la recirculación y el contrato impide resolverlo sin renegociación.
+
+**Criterio de actuación:** ningún formato se mantiene o activa sin responder si el balance neto (ingresos vs. impacto en usuarios, páginas vistas y recirculación) es positivo.
 
 ---
 

@@ -1,11 +1,12 @@
 # Adjust / AppsFlyer
 
-**Estado:** Por definir
+**Estado:** Activo — en seguimiento
+**Última actualización:** 2026-04-16
 
-## Descripcion
+## Descripción
 
-Proyecto relacionado con Adjust y/o AppsFlyer. Completar con descripcion, objetivo y contexto.
+Gestión de las herramientas de atribución móvil Adjust y/o AppsFlyer para el tracking de instalaciones y conversiones de la app de MARCA.
 
-## Personas involucradas
+## Pendientes
 
-- Por definir
+- Clarificar qué ocurre si se supera el número de conversiones y data points contratados. Pendiente de respuesta / gestión con el proveedor.
