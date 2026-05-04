@@ -83,3 +83,94 @@ El contrato no está firmado. Los bloqueos activos son:
 4. Aprobación presupuestaria con Gema Monjas.
 5. Iniciar homologación de proveedor con Ana Maria Ramos Esteban.
 6. Coordinación técnica con Franz (IT) para integración del SDK.
+
+---
+
+## Negociación con AppsFlyer
+
+### Participantes clave
+
+- **Karen Rodrigues Pita** — Head of Product, MARCA (Unidad Editorial). Coordinadora principal del proyecto.
+- **Gema Monjas Ramirez** — Directora de Negocio MARCA y Radio MARCA. Aprobación final de presupuesto.
+- **Ana Maria Ramos Esteban** — Equipo de Marketing. Responsable de aportar datos de rendimiento (impresiones, clics, CTR).
+- **Adrián Carrión Armas** — Equipo de Producto/Tecnología. Involucrado en el seguimiento.
+- **Nicolas Orozco** — Enterprise Account Executive, AppsFlyer. Gestor comercial y responsable de la propuesta.
+- **Miri Shlimak** — Manager, AppsFlyer. Soporte en la negociación.
+
+---
+
+### Objetivo
+
+Establecer un MMP (Mobile Measurement Partner) para la nueva app de MARCA que permita atribuir instalaciones, deduplicar canales (Meta, Google, CRM, etc.) y optimizar la inversión en marketing.
+
+---
+
+### KPIs de referencia aportados por MKT (semana tipo, 13-18 octubre)
+
+| Métrica | Valor |
+| :--- | :--- |
+| Total impresiones | 9.238.908 |
+| Total clics | 2.061 |
+| CTR promedio | 0,02% |
+
+> Estos datos sirven como base para el cálculo de Capacity Credits. La conversión es baja pero es la referencia real disponible.
+
+---
+
+### Modelo de consumo: Capacity Credits
+
+El coste depende del volumen de acciones registradas:
+
+- **Instalaciones no orgánicas:** AppsFlyer estimó 500.000 en su propuesta. MARCA reportó ~88.000 reales (sep 2024 – sep 2025).
+- **Impresiones y clics:** AppsFlyer incluyó en su escenario 725M de impresiones y 254M de clics para evitar sobreconsumo.
+- **Dato pendiente crítico:** Se necesitan los datos reales de banners web que llevan a la app para ajustar el paquete de créditos y evitar sobrecostes por volatilidad.
+
+---
+
+### Precio y condiciones
+
+- **Presupuesto objetivo de MARCA:** 60.000 € para el primer año.
+- **Propuesta de AppsFlyer:** Contrato a 2 años para bloquear tarifas de 2026 y 2027, reduciendo el precio sin perder funcionalidades.
+- **Incentivo incluido:** Módulo *Incrementality for UA* gratuito durante 12 meses.
+- **Soporte:** Debate entre **Enterprise CSM** (dedicado, recomendado para un lanzamiento) vs. **Growth CSM** (compartido y reactivo).
+
+---
+
+### Tiempos y plazos (diciembre 2025)
+
+| Periodo | Acción |
+| :--- | :--- |
+| 1 – 5 dic | Revisión interna y escalado a Gema y François (CEO) |
+| 5 – 10 dic | Revisión legal de documentos |
+| 10 – 15 dic | Firma del contrato |
+| 15 – 20 dic | Inicio de onboarding con Customer Success |
+
+> **Aviso de AppsFlyer:** Si la firma pasa a 2026, las condiciones comerciales y descuentos de Q4 2025 dejan de ser aplicables.
+
+---
+
+### Capacidades y elementos estratégicos
+
+- **Protect360 (antifraude):** Recomendado dado el uso de redes de afiliación locales, donde el riesgo de instalaciones falsas (bots, click spamming) es alto.
+- **Audiencias:** Exclusiones inteligentes y retargeting/fidelización basados en datos in-app y CRM.
+- **Integraciones confirmadas:** Web-to-app, códigos QR (digital e impreso), integración opcional con AdMob para ingresos publicitarios.
+
+---
+
+### Estado actual y bloqueos
+
+1. **Datos reales de impresiones de banners web pendientes:** Sin esta cifra no se puede ajustar el paquete de Capacity Credits ni evitar riesgo de sobrecoste.
+2. **Decisión de proveedor pendiente:** AppsFlyer compite con Adjust y Singular. No se puede avanzar en la firma hasta tener la comparativa completa.
+3. **Aprobación presupuestaria:** Gema Monjas debe validar una vez cerrada la comparativa y ajustado el precio.
+4. **Condiciones de Q4 2025 posiblemente expiradas:** Las condiciones negociadas tenían vigencia en Q4 2025. Pendiente confirmar con Nicolas Orozco si siguen vigentes.
+
+---
+
+### Próximos pasos
+
+1. Obtener datos reales de impresiones de banners web (Ana Maria Ramos / MKT) para ajustar Capacity Credits.
+2. Completar evaluación comparativa (Adjust vs AppsFlyer vs Singular).
+3. Confirmar con Nicolas Orozco si las condiciones de Q4 2025 siguen vigentes.
+4. Decidir proveedor y opción de soporte (Enterprise CSM vs Growth CSM).
+5. Aprobación presupuestaria con Gema Monjas.
+6. Revisión legal e inicio de firma.
