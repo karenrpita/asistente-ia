@@ -70,10 +70,9 @@ SOPs in `references/sops/`. Output examples and style guides in `references/exam
 
 Never delete files. Move outdated or completed material to `archives/`.
 
-## Skills backlog
+## Skills disponibles
 
-Skills to build when ready:
-
+- `doc-agent` — Agente interactivo de documentación. Audita READMEs, ordena proyectos por prioridad y hace preguntas específicas para completar la documentación. Uso: `/doc-agent [categoría|proyecto]`
 - `project-doc` — Generate project documentation with KPIs, impact potential, and benchmark examples
 - `progress-summary` — Weekly or sprint progress summary from Jira/Confluence input
 - `impact-report` — Post-project impact report (how each project moved the KPIs)

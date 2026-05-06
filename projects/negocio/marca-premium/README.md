@@ -1,7 +1,7 @@
 # MARCA Premium
 
 **Estado:** En definición — lanzamiento previsto tras el parón de septiembre 2026
-**Ultima actualizacion:** 2026-04-16
+**Ultima actualizacion:** 2026-05-06
 
 ## Status 2026-04-16
 
@@ -11,8 +11,8 @@
 - Se va a evaluar con Publicidad la posibilidad de **reducir posiciones publicitarias** que se muestran a los suscriptores.
 - Habrá un **trial gratuito** o con un precio más bajo.
 - **Lanzamiento:** después del parón de septiembre 2026.
-- Se plantea **Google One Tap** para captar registros. En El Mundo está funcionando muy bien.
-- **CLUB MARCA / Jakala:** en evaluación empresas que puedan sustituir a Jakala.
+- Se plantea **Google One Tap** para captar registros. En El Mundo está funcionando muy bien. Pendiente de estimacion de esfuerzo tecnico antes de aprobar.
+- **CLUB MARCA / Jakala:** en evaluación empresas que puedan sustituir a Jakala. Reunion con Qualifio prevista semana del 12/05/2026.
 - **Qualifio:** estimado el GNP para enviar información de autenticación del usuario a Qualifio. Talla estimada: S.
 
 ---
@@ -35,7 +35,7 @@ Transicion de MARCA hacia un modelo de negocio hibrido: desde la gratuidad total
 
 Marca evoluciona de un modelo dependiente de la publicidad hacia un modelo de suscripcion.
 
-- **Cierre de contenidos:** Proactivo y manual por el equipo editorial (no dinamico). Entre 10 y 20 contenidos diarios.
+- **Cierre de contenidos:** Proactivo y manual por el equipo editorial (no dinamico). Entre 10 y 20 contenidos diarios. El criterio es discrecional: se cierran los contenidos mas trabajados editorialmente y con mayor atractivo. No hay criterios objetivos definidos a fecha de mayo 2026.
 - **Tipologias de contenido cerrado:** Noticias, opinion, directos, videos, cronicas y fotogalerias.
 - **Exclusiones del muro de pago:** Resultados, estadisticas, calendarios y paginas estaticas.
 - **Eliminacion del "Registro":** El modelo de contenido bajo registro desaparece. Los articulos con valor anadido pasan directamente al muro de pago.
@@ -47,7 +47,8 @@ Marca evoluciona de un modelo dependiente de la publicidad hacia un modelo de su
 - **Contenido Gratuito:** Acceso estandar (se mantiene).
 - **Suscripcion de Contenido:** Acceso a los 10-20 articulos diferenciales diarios.
 - **Pack Orbit:** Contenido gratuito + servicios Orbit.
-- **Marca Pro:** Suscripcion para eliminar publicidad (actualmente solo en App). Pendiente definir si se integra como beneficio en los nuevos planes o se mantiene independiente.
+- **Marca Pro:** Suscripcion independiente para eliminar publicidad (actualmente solo en App). Decidido que NO se integra como beneficio en los planes de MARCA Premium — son productos separados.
+- **Precios:** Sin definir a fecha de mayo 2026.
 - **Moneda:** Unicamente Euros (EUR), por limitaciones de la herramienta de cobros (Osone).
 - **Promociones:** Codigos promocionales y periodos de trial en fase de definicion.
 
@@ -67,7 +68,7 @@ Marca evoluciona de un modelo dependiente de la publicidad hacia un modelo de su
 - **Pasarela de pago:** Alenta. Presenta limitaciones en gestion dinamica de precios y productos; requerira despliegues tecnicos especificos en produccion. Existe debate tecnico con otras opciones de mayor coste.
 - **App nativa:** Pagos obligatoriamente a traves de Google Play Store y Apple App Store.
 - **AMP:** Excluido del modelo de pago en el lanzamiento. AMP se encuentra en fase de cierre en el sector.
-- **Fidelizacion (MARCA Premium):** Gestionado externamente por Jacala. Usuarios registrados tendran descuentos fijos; suscriptores tendran acceso a sorteos dinamicos. Requiere integracion tecnica para envio de informacion de autenticacion desde Marca a Jacala. Jacala ha demostrado ser poco eficaz; se esta desarrollando un CMS propio para gestionar descuentos de forma mas agil.
+- **Fidelizacion (MARCA Premium):** Gestionado actualmente por Jakala. Usuarios registrados tendran descuentos fijos; suscriptores tendran acceso a sorteos dinamicos. Requiere integracion tecnica para envio de informacion de autenticacion desde Marca a Jakala. Jakala ha demostrado ser poco eficaz. Reunion prevista semana del 12/05/2026 con Qualifio como alternativa. CMS propio tambien en evaluacion como solucion paralela.
 - **Muro dinamico:** Se planteo la opcion de acceso tras N contenidos consumidos (ej. 5 articulos), aun en debate.
 
 ---
@@ -89,9 +90,17 @@ El equipo de desarrollo debe cumplir estrictamente con:
 
 ---
 
+## Owner
+
+**Mei** — Product Manager de Ventas. Es la responsable del proyecto. Toda decision relevante requiere aprobacion de:
+- **Negocio:** François y Gema Monjas
+- **Producto:** Karen (Head of Product)
+
+---
+
 ## Stakeholders
 
-1. **Departamento de Negocio/Ventas (Suscripciones):** Responsables de la rentabilidad del modelo.
+1. **Departamento de Negocio/Ventas (Suscripciones):** Responsables de la rentabilidad del modelo. Interlocutores: François y Gema Monjas.
 2. **Equipo Editorial:** Encargados de la estrategia de contenido. Punto critico de friccion.
 3. **Equipo Tecnico:** Desarrollo e integracion de plataformas de pago y gestion.
 
@@ -99,7 +108,7 @@ El equipo de desarrollo debe cumplir estrictamente con:
 
 ## Riesgos y Problematicas
 
-- **Falta de owner claro:** Ausencia de un responsable definido del proyecto, lo que deriva en falta de estrategia.
+- **Owner definido pero con dependencias multiples:** Mei es la owner del proyecto, pero toda decision relevante requiere alineacion con Negocio (François, Gema) y Producto. Esto puede ralentizar la toma de decisiones.
 - **Paralisis ejecutiva:** La complejidad del desarrollo sin hoja de ruta clara reduce las probabilidades de exito.
 - **Inconsistencia editorial:** Historicamente las iniciativas editoriales y de negocio no han estado alineadas.
 - **Cultura de datos:** Dificultad persistente para obtener datos fiables para la toma de decisiones.
@@ -120,3 +129,52 @@ El equipo de desarrollo debe cumplir estrictamente con:
 - Usuarios suscritos (conversion)
 - Retencion de suscriptores
 - Impacto en usuarios, paginas vistas y video views
+
+---
+
+## Analisis de Impacto Publicitario — Eliminacion de Formatos F, F2 y F3
+
+**Fuente:** MarcaPremium_20260430_Content_type_WebApp.xlsx
+**Fecha del analisis:** abril 2026
+**Cohorte objetivo:** ~9,000 suscriptores estimados para el primer ano
+
+El objetivo es cuantificar el impacto de eliminar los formatos **F (Interstitial)**, **F2 (Teads)** y **F3 (Seedtag)** para los suscriptores. Se usa como referencia el comportamiento de los usuarios del signwall, que representan el perfil mas cercano al futuro suscriptor.
+
+### KPIs de navegacion (media mensual — Q1 2026)
+
+| Plataforma | Usuarios Unicos (signwall) | PV por usuario/mes |
+| :--- | :--- | :--- |
+| Web | ~90,000 | ~226 PVs |
+| App | ~7,500 | ~345 PVs |
+
+El engagement en App es un 50% superior al de Web. La portada y los articulos concentran mas del 70% del peso de trafico, siendo los puntos criticos de exposicion a los formatos F, F2 y F3.
+
+### Perfil demografico
+
+- Grupo principal: **35-54 anos** (~45% del total de usuarios).
+- Sesgo masculino marcado: >85% en App, ~62% en Web.
+- En App, el trafico es predominantemente directo (90%), lo que facilita la retencion.
+- En Web, mayor dependencia de buscadores, pero los usuarios de signwall muestran recurrencia superior a la media.
+
+### Impacto por formato
+
+| Formato | Ubicacion | Nivel de intrusividad | Efecto de la eliminacion |
+| :--- | :--- | :--- | :--- |
+| F (Interstitial) | Entrada / carga de pagina | Alto | Mejora significativa en velocidad de carga y experiencia (LCP) |
+| F2 (Teads) | Outstream (dentro del texto) | Medio | Aumenta tiempo de permanencia al eliminar interrupciones visuales |
+| F3 (Seedtag) | In-image / contextual | Bajo-Medio | Limpieza visual del contenido editorial |
+
+### Estimacion de impresiones no servidas
+
+Con una media de 345 PV/mes en App aplicada a los 9,000 suscriptores:
+
+- **Mensual:** ~3.1 millones de PVs sin publicidad intrusiva.
+- **Anual:** ~37 millones de impresiones de estos formatos no servidas a suscriptores.
+
+### Consideraciones estrategicas
+
+- La eliminacion de F y F2 es el argumento de venta mas fuerte para convertir al usuario registrado en suscriptor.
+- Con 345 PVs/mes, el usuario Premium es un perfil de alto consumo y alta rentabilidad publicitaria. El precio de la suscripcion debe cubrir ese coste de oportunidad.
+- Debe vigilarse si la perdida de ingresos por CPM (Teads/Seedtag) se compensa con el LTV del suscriptor.
+- Tener en cuenta la estacionalidad: eventos como finales de mayo/junio disparan el PV y aumentan el valor del inventario no servido.
+- **Pendiente:** calcular el coste de oportunidad con CPMs reales de cada formato para una valoracion economica exacta.
