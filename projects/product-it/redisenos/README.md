@@ -3,13 +3,17 @@
 Rediseño de las secciones principales del producto MARCA.
 
 **Estado:** Activo — en fase de análisis, investigación y decisiones con agencia
-**Última actualización:** 2026-04-16
+**Última actualización:** 2026-05-06
 
-**Areas en scope:**
-- Portada
-- Menu y navegación
-- Noticias
-- Directos
+---
+
+## Fases del proyecto
+
+| Fase | Nombre | Estado |
+|------|--------|--------|
+| 1 | [Sistema de navegación y menú](Menu%20y%20navegacion/README.md) | En validación |
+| 2 | [Portada](Portada/README.md) | En diseño |
+| 3 | [Contenidos](Contenidos/README.md) | Por definir |
 
 ---
 
@@ -18,19 +22,6 @@ Rediseño de las secciones principales del producto MARCA.
 Reuniones mantenidas con Secuoyas, Redbility y Prodigioso Volcán. Pendiente presentación de propuestas.
 
 Pendiente definir próximos pasos con la agencia tras la última actualización de FARCO.
-
----
-
-## Fase 1 — Cabecera y sistema de navegación
-
-- **Diseño UI:** en validación.
-- **Desarrollo:** pendiente de comenzar en función de la decisión con la agencia.
-- **Tecnología:** avanza por separado con el desarrollo del servicio para la gestión de la navegación.
-
-## Fase 2 — Portada
-
-- **UX:** trabajando prototipos con diferentes estructuras, formatos de publicidad y tipos de bloques de contenidos.
-- **UI:** avanzando en pruebas de diseño para look & feel y diseño de cover content.
 
 ---
 
