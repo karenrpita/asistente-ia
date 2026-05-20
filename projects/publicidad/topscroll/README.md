@@ -1,7 +1,7 @@
 # Top Scroll
 
-**Estado:** En evaluación activa — impacto en CLS confirmado, pendiente decisión
-**Última actualización:** 2026-05-06
+**Estado:** En evaluación activa — decisión final pendiente para el jueves 2026-05-14
+**Última actualización:** 2026-05-12
 
 ## Descripción
 
@@ -76,12 +76,39 @@ El CLS es la métrica más afectada. Mide el movimiento inesperado de elementos 
 
 ---
 
+## Reunión 2026-05-12 — Decisiones y bloqueos
+
+### Participantes
+- **Ricky** — SEO/técnico. Foco en CLS y reserva de espacios.
+- **Gaby** — Validez de datos y representatividad de los escenarios de prueba.
+- **Marta / Cristina** — Tráfico y Producto. Implementación técnica y comercialización.
+- **Fran** — Experimentación y mediciones locales.
+
+### Bloqueo principal: "blanqueo" de laterales
+Hay discrepancia sin resolver entre la postura comercial y la técnica:
+- **Comercial:** quiere mantener Skies + Robapáginas activos junto al Top Scroll para asegurar impresiones.
+- **Técnico/Producto:** la interpretación original era que Top Scroll sustituye todos los demás formatos para limpiar la página.
+
+Este punto debe resolverse antes del jueves.
+
+### Hallazgo técnico confirmado
+Los datos de campo (CrUX) no muestran degradación tan grave como las pruebas locales. Razón: si el usuario hace scroll antes de que cargue el anuncio, el desplazamiento ocurre fuera del viewport y Google penaliza menos. Esto valida que las pruebas locales sobreestiman el impacto real.
+
+### Problema de representatividad de datos
+Las pruebas de los últimos 30 días están contaminadas porque Top Scroll y Midscroll han convivido simultáneamente. Los datos en Noticias (donde está el tráfico real) aún no se han medido de forma limpia.
+
+---
+
 ## Próximos pasos y decisiones pendientes
 
-- **Optimización Mid Scroll:** ajustar para que no exceda el ancho de pantalla y sea compatible con todas las plantillas (especialmente noticias).
-- **Revisión técnica del salto visual:** la agencia Icreate está analizando si es posible eliminar el "salto" al cargar la creatividad.
-- **Gestión de inventario:** usar Top Scroll para reemplazar formatos menos rentables o más intrusivos, no para añadirlos encima.
-- **Estrategia de hueco fijo:** reservar una altura mínima fija en la web para el formato. Si no hay campaña, mantener el hueco vacío. Eliminar el hueco cuando no hay publicidad genera CLS igualmente.
+| Acción | Responsable | Plazo |
+|---|---|---|
+| Prueba en Noticias: Top Scroll + Laterales + Roba | Cristina / Tráfico | Inmediato |
+| Página de pruebas abierta que replique Portada | Fran / equipo técnico | 48h (antes del jueves) |
+| Evaluar escenario 1 (solo Top Scroll) vs. escenario 2 (Top Scroll + laterales + roba) | Todo el equipo | Jueves 2026-05-14 |
+| Explorar si el Mega puede ir siempre encima de la cabecera (hueco fijo) | Ricky | Pendiente evaluación |
+
+**Nota:** El proyecto lleva 4 meses de retraso (lanzamiento previsto para enero 2026). La reunión del jueves debe cerrar la decisión definitiva antes de la salida masiva al mercado.
 
 ---
 
