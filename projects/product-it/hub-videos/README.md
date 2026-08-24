@@ -93,6 +93,7 @@ Ver proyecto específico de automatización: [integracion-video-externo](../inte
 
 ## Proyectos satélite relacionados
 
+- **Vídeo vertical — reproductor propio vs. YouTube:** investigación sobre qué medios usan reproductor propio frente a feed de YouTube Shorts, y por qué. Recomienda publicación dual (Dailymotion + YouTube) sobre migrar o embeber Shorts. Ver [video-vertical](../video-vertical/README.md).
 - **SRT automático + resumen con IA:** automatizar la creación de subtítulos (archivos SRT) y generar el resumen del CT Vídeo desde la transcripción vía IA. Requiere integración con Dailymotion. Ver GNP.
 - **Crónicas automáticas con IA:** generar crónicas de partido desde feeds Opta para competiciones con menor cobertura editorial. Ver GNP.
 
