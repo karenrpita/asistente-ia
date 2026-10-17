@@ -25,3 +25,16 @@ El organigrama exacto está por detallar. Se actualizará conforme Karen lo vaya
 ## Mayor reto con el equipo
 
 Conseguir que sean proactivos y capaces de anticiparse a problemas. El objetivo es darles las herramientas necesarias para que puedan tomar buenas decisiones de forma autónoma.
+
+## Otros interlocutores habituales
+
+| Nombre | Rol | Cuando involucrarle |
+|---|---|---|
+| Emilio | Responsable editorial | Interlocutor editorial en proyectos de cobertura (eventos, especiales) |
+| Damián Santiago | SEO / estrategia de audiencias | Requisitos SEO de proyectos, junto con Gonzalo |
+| Gonzalo | SEO | Requisitos SEO de proyectos, junto con Damián |
+| Jorge Alia | Analítica | Marcado, seguimiento e informes de proyecto |
+| Alberto Benítez | Redes | Distribución en redes sociales |
+| Nacho Arcos | Comercial | Venta de patrocinios |
+| Carmen | Responsable de producto publicitario | Definición de formatos y posiciones publicitarias |
+| Departamento de QA | QA | Validación antes de salida a producción |

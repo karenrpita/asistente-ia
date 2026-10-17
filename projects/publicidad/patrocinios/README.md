@@ -29,3 +29,9 @@ Gestión de patrocinios publicitarios directos en MARCA.
 | Fecha | Cliente | Formato | Descripción | Contexto |
 |---|---|---|---|---|
 | 2026-04-14 | OPPO | Patrocinio imágenes Portada | Calidad de imágenes muy baja en Xalok | Cuartos de final Champions League 2026 (Atlético - Barça). El patrocinio se basa en la calidad de cámara de Oppo, incompatible con baja resolución en el CMS. |
+
+---
+
+## GNP
+
+- [GNP - Patrocinios MI MARCA APP](gnp-patrocinios-mi-marca-app.md)

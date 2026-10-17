@@ -112,3 +112,9 @@ Además: feeds OPTA contratados (CSV/RSS) con información extensa de competicio
 - Damien Santiago (estrategia de audiencias)
 - Pablo Caño (técnico)
 - Equipo editorial por sección
+
+---
+
+## GNP
+
+- [GNP - Central de Datos](gnp-central-de-datos.md)

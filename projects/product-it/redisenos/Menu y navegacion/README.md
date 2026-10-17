@@ -1,7 +1,7 @@
 # Fase 1 — Sistema de navegación y menú
 
 **Estado:** En validación
-**Última actualización:** 2026-05-06
+**Última actualización:** 2026-10-01
 
 ---
 
@@ -52,6 +52,7 @@ Modernizar y renovar una cabecera y una navegación que han quedado obsoletas. M
 - En mobile (valorar chips). Pendiente de definir si tienen sentido en desktop.
 - Especial valor a la tab de resultados.
 - La tab de última hora puede perder sentido si se añade un widget en portada con noticias de última hora + "ver todo".
+- Desarrollo en curso: ver ticket [REDIMARCA-68](#redimarca-68--enlaces-tipo-chip-backoffice) — enlaces tipo chip en cabecera, gestionables desde backoffice.
 
 **Scroll:** simplificar la cabecera tanto en scroll up como en scroll down.
 
@@ -143,6 +144,76 @@ Calendario de fases UX/UI y definición de producto: `Calendario Rediseño MARCA
 
 **Prototipo de partida:**
 Prototipo de navegación trabajado hace tres años: [MARCA — Sistema de navegación (Figma)](https://www.figma.com/design/CsTHYHmx1cz9yQ6hKgEQIw/MARCA---Sistema-de-navegaci%C3%B3n?node-id=2389-70157&t=PUfKqIdKlOGOjPnk-1)
+
+---
+
+## REDIMARCA-68 — Enlaces tipo chip (Backoffice)
+
+**Estado:** To Do
+**Tipo:** Desarrollo — BackOffice
+
+### Objetivo
+
+Incorporar un módulo dinámico de enlaces rápidos con formato visual de "chips" o "píldoras" en la cabecera principal (header) de MARCA. Dirigen tráfico a contenidos de actualidad (portadillas, eventos especiales, tags) o a la sección de Resultados, mejorando la accesibilidad a contenidos clave durante la navegación.
+
+### Alcance y dispositivos
+
+- Desktop
+- Mobile & Tablet
+- AMP: a evaluar capacidad técnica de integración en cabecera.
+- Aplica a todas las ediciones de MARCA (España, México, USA, English).
+
+### Tipología de chips
+
+**Chip de "Resultados":**
+- Posición: primera posición a la izquierda de la lista de chips (movible si es necesario).
+- Comportamiento: indicador de directos (badge) con contador numérico en tiempo real del total de eventos en directo (Live) activos, independiente del deporte, competición o sección en la que esté el usuario.
+- La información de estado se actualiza mediante integración con el servicio de la API deportiva.
+- Estilo visual: color distintivo fijo (fondo) para diferenciarlo de los chips editoriales.
+
+**Chips editoriales (dinámicos):**
+- Cantidad: mínimo 0, máximo 5-6 chips editoriales (además del chip fijo de Resultados).
+- Edición rápida e independiente por perfiles específicos desde el backoffice, a cualquier hora.
+- Refresco en tiempo real / inmediato en la web tras publicación en backoffice.
+- Nombre/título: nombre de la sección/tag o nombre personalizado.
+- URLs: soporta enlaces internos a portadillas o tags existentes, y enlaces sintéticos y/o externos configurados manualmente desde el editor.
+
+### Comportamiento en navegación y UX/UI
+
+- **Ubicación:** integrados dentro del Main Header, junto a menú hamburguesa y logotipo de MARCA.
+- **Scroll (desktop/mobile):** tanto en scroll down como en scroll up, el header pasa a su versión reducida manteniendo visibles los chips, el logo a la izquierda y el menú hamburguesa.
+- **Estados visuales (hover/focus/active):** pendientes de definir para Resultados y para chips editoriales.
+- **Accesibilidad:**
+  - Indicador de foco visible.
+  - Navegación por teclado.
+  - `aria-current="page"` en el chip de la sección en la que está el usuario.
+
+### Requisitos SEO y rendering
+
+- Nofollow / sponsored, igual que en el resto de Xalok.
+- Enlaces reales: `<a href="URL">`, no `<button>`, ni `onclick`, ni `href="#"`.
+- Deben venir en el HTML que llega del servidor, no inyectados después por JS.
+- En móvil, todos los chips deben estar en el DOM aunque solo se vean al hacer scroll horizontal, sin carga diferida (Google indexa la versión móvil).
+- **Medición con Marfeel:** en el atributo `data-mrf-recirculation` del contenedor, nunca como parámetros en la URL (`?utm_`, `?ref=chips`), para medir la interacción sin duplicar URLs.
+- **URLs de destino limpias:** cada chip debe enlazar a la URL canónica final — responde 200 sin redirecciones intermedias, https, barra final igual que el resto del sitio, sin parámetros. Ideal que el CMS lo valide al guardar el chip.
+- **Sin CLS:** altura reservada para la fila de chips desde el primer pintado.
+- **Rendimiento:** sin JS que bloquee la carga.
+- **Mismo target:** enlaces internos se abren en la misma pestaña, sin `target="_blank"`.
+
+### Requisitos CMS / Backoffice
+
+- Configurador de chips por edición (selector de edición de MARCA).
+- Añadir / eliminar / reordenar chips (máximo 5-6 slots editoriales).
+- Campos por chip:
+  - Texto del chip (label).
+  - URL de destino (sintética o enlace a contenido existente).
+  - Atributo SEO: checkbox o dropdown (follow/nofollow).
+- Botón de activación / publicación en tiempo real.
+
+### Pendientes de definición
+
+- Estados visuales hover/focus/active para ambos tipos de chip.
+- Evaluación técnica de integración en AMP.
 
 ---
 

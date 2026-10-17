@@ -9,3 +9,9 @@ Proyecto relacionado con Radio Marca. Completar con descripcion, objetivo y cont
 ## Personas involucradas
 
 - Por definir
+
+---
+
+## GNP
+
+- [GNP - Rediseño Radio MARCA APP](gnp-rediseno-radio-marca-app.md)

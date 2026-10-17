@@ -111,3 +111,9 @@ Ver proyecto específico de automatización: [integracion-video-externo](../inte
 - Damien Santiago (responsable de audiencias y estrategia)
 - Equipo English (Miami + España Raíz)
 - Nacho Delgado Sánchez (referenciado en crónicas automáticas)
+
+---
+
+## GNP
+
+- [GNP - Hub de Vídeos Fase 2](gnp-hub-videos-fase-2.md)

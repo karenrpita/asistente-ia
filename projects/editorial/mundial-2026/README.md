@@ -66,7 +66,7 @@ Todo será enlazable: títulos, cintillos, banderas, escudos, imágenes, nombres
 - La carga del logo debe ser rápida (evitar problemas como con Luckia en el Mundial de Clubes)
 - Enlace a la fase en la que están
 - Se verán los Grupos + Selecciones con enlace a cada uno (48 selecciones = más grupos que en ediciones anteriores)
-- Pendiente: tiempos de desarrollo para la personalización (para saber hasta cuándo puede venderlo Nacho)
+- Pendiente: tiempos de desarrollo para la personalización (para saber hasta cuándo puede venderlo Nacho Arcos)
 
 Prototipo: https://www.figma.com/proto/nY8C0HR7hViNTWGndEXKV5/MARCA---Mundial-2026?page-id=0%3A1&node-id=2031-77441
 
@@ -136,7 +136,7 @@ URL de referencia: https://www.marca.com/futbol/mundial.html
 - Cabecera especial con logo y diseño diferente
 - Migas enlazables y editables
 - Formato include + logo — se mantiene para Diego
-- Patrocinio por DFP de una noticia diaria en la home — para Nacho
+- Patrocinio por DFP de una noticia diaria en la home — para Nacho Arcos
 - Habría que trabajar la guía con Ana para integrar más el patrocinio en la noticia
 
 ### Hub de vídeo patrocinado
@@ -167,7 +167,7 @@ Modelo mixto: patrocinadores directos + publicidad programática DFP en espacios
 | Widget de partidos | DFP con geolocalización | Nacho | En portada y portadilla |
 | CTs relacionados con el Mundial | DFP debajo del Mega | — | Sin franja en mobile |
 | Hub de vídeo | DFP integrado con logo monocromático | — | En canal portada MARCA TV |
-| Marcadores de portada | DFP de un anunciante distinto al de temporada | Carmen (APP) | Con posibilidad de cuota de apuestas |
+| Marcadores de portada | DFP de un anunciante distinto al de temporada | Carmen | Con posibilidad de cuota de apuestas |
 | Noticia patrocinada en home | DFP una noticia diaria | Nacho | Dentro y fuera de la noticia |
 | Calculadora | — | — | Pendiente |
 | Bloque include + logo en home | — | Diego | Formato include |
@@ -374,7 +374,7 @@ Items comerciales para GNP:
 - Logo del Mundial: sin confirmar
 - UI del widget: pendiente
 - UI posiciones de patrocinio: a falta de un pequeño ajuste de color
-- Tiempos de desarrollo para personalización de cuenta atrás y widget (para Nacho)
+- Tiempos de desarrollo para personalización de cuenta atrás y widget (para Nacho Arcos)
 - En APP: si hay interés comercial en el patrocinio, habría que hacerlo directamente en la APP
 
 ---
@@ -405,11 +405,11 @@ Items comerciales para GNP:
 | Karen Rodrigues Pita | Head of Product — responsable del producto |
 | Javier Rodriguez Diez | Product Manager — coordinación |
 | Luis Fernando Tapia Vaca | — |
-| Nacho Delgado | Comercial — venta de patrocinios |
+| Nacho Arcos | Comercial — venta de patrocinios |
 | Franz Neuenschwander Barreto | Producto — widget de portada/portadilla |
 | Germán | Imagen Visual |
 | Jose Antonio Aguilera | Tecnología |
-| Carmen | APPs |
+| Carmen | Responsable de producto publicitario |
 | Diego | Bloque de noticias patrocinadas en home |
 | Ana | Guía de integración de patrocinio en noticia |
 | Belen Gomez | Project Manager (IT) |

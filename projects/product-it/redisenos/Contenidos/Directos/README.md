@@ -14,3 +14,10 @@ Rediseño del formato de directos dentro de la iniciativa de rediseño de conten
 ## Personas involucradas
 
 - Por definir
+
+---
+
+## GNP
+
+- [GNP - Rediseño Web Directos V1](gnp-rediseno-web-directos-v1.md)
+- [GNP - Rediseño Web Directos V2](gnp-rediseno-web-directos-v2.md)

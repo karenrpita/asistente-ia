@@ -229,3 +229,10 @@ Presentes en las estaticas: Organization, BreadcrumbList, Event.
 | Editorial | Noticias automaticas y contenido |
 | Publicidad | Patrocinios y posiciones publicitarias |
 | Apps | Webviews y tabs en portadilla |
+
+---
+
+## GNP
+
+- [GNP - Lotería de Navidad 2027](gnp-loteria-navidad-2027.md)
+- [GNP - Lotería de Navidad 2028](gnp-loteria-navidad-2028.md)

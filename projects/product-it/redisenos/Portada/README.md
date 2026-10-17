@@ -193,3 +193,9 @@ Calendario de fases UX/UI y definición de producto: `Calendario Rediseño MARCA
 - Analítica
 - QA
 - Producto
+
+---
+
+## GNP
+
+- [GNP - Rediseño Web Portada](gnp-rediseno-web-portada.md)
